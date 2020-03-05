@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <div id="elem">List</div>
+</head>
+<body>
+
+<script>
+let tag = document.getElementById("elem");
+let first = document.createElement("li");
+first.innerHTML = "pen";
+tag.appendChild(first);
+let second = document.createElement("li");
+second.innerHTML = "pencil";
+tag.appendChild(second);
+let third = document.createElement("li");
+third.innerHTML = "ruler";
+tag.appendChild(third);
+let elems = tag.children;
+for(let i = 0; i < elems.length; i++){
+    elems[i].addEventListener('click',function(){
+        tag.removeChild(elems[i]);
+    });
+}
+
+</script>
+    
+</body>
+</html>

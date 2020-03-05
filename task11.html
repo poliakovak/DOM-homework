@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <input id="test" type="checkbox">
+
+</head>
+<body>
+    <script>
+        let elem = document.getElementById("test");
+        let button = document.createElement("button");
+        button.innerHTML = "Clone";
+        button.addEventListener('click',function(){
+            document.body.appendChild(elem.cloneNode(true));
+        })
+        document.body.appendChild(button);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div id="elem" class="www">Test</div>
+    <div id="elem1" class="www">Test1</div>
+    <div id="elem2" class="www">Test2</div>
+</head>
+<body>
+<script>
+    let first = document.getElementById("elem");
+    first.innerHTML += first.tagName.toLowerCase();
+
+    let second = document.getElementById("elem1");
+    second.innerHTML += second.tagName.toLowerCase();
+
+    let third = document.getElementById("elem2");
+    third.innerHTML += third.tagName.toLowerCase();
+</script>
+</body>
+</html>

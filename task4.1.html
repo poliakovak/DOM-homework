@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task4.1</title>
+    <ul id="parent">Список</ul>
+</head>
+<body>
+<script>
+let arr = ["Чай","Кофе","Вода"];
+let list = document.getElementById("parent");
+for(let i = 0; i < arr.length; i++){
+    let point = document.createElement("li");
+    point.innerHTML = arr[i];
+    list.appendChild(point);
+    point.addEventListener('click', function(){
+        alert(`Вы добавили ${point.innerHTML}`);
+    })
+}
+</script>
+</body>
+</html>

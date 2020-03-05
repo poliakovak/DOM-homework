@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <div id="elem">Element</div>
+</head>
+<body>
+<script>
+    let tag = document.getElementById("elem");
+    tag.insertAdjacentHTML("beforeBegin","<span>Перед</span>");
+    tag.insertAdjacentHTML("afterEnd","<span>После</span>");
+    tag.insertAdjacentHTML("afterBegin","<span>В начало</span>");
+    tag.insertAdjacentHTML("beforeEnd","<span>В конец</span>")
+
+</script>
+</body>
+</html>

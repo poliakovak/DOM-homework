@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <div id="elem">Element</div>
+</head>
+<body>
+<script>
+    let elem = document.getElementById("elem");
+    let list = document.createElement("ol");
+    list.innerHTML = "List";
+    elem.appendChild(list);
+    let point = document.createElement("li");
+    point.innerHTML = "first";
+    list.appendChild(point);
+
+    //point.parentElement.style.cssText = 'color: red';
+    point.parentElement.parentElement.style.cssText = 'color: red';
+    console.log(elem);
+</script>
+</body>
+</html>

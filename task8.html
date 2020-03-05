@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <p id="first">Up</p>
+    <p id="elem">Elem</p>
+    <p id="second">Down</p>
+    <p id="third">Ground</p>
+</head>
+<body>
+<script>
+let elem = document.getElementById("elem");
+let prev = elem.previousElementSibling;
+prev.innerHTML += "!";
+let next = elem.nextElementSibling;
+next.innerHTML += "!";
+let ground = elem.nextElementSibling.nextElementSibling;
+ground.innerHTML += "!!!!";
+</script>
+</body>
+</html>

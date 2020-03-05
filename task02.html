@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <input id="main">
+</head>
+<body>
+    <script>
+        let elem = document.getElementById("main");
+        let button = document.createElement("button");
+        button.innerHTML = "+";
+        button.addEventListener('click',function(){
+            let newInput = elem.cloneNode(true);
+            elem.parentElement.appendChild(newInput);
+            //elem.insertAdjacentElement("afterend",newInput);
+        })
+        document.body.appendChild(button);
+    </script>
+</body>
+</html>

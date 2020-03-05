@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <div id="elem">Test</div>
+</head>
+<body>
+<script>
+    let elem = document.getElementById("elem");
+    elem.style.cssText = 'color: red; font-size: 30px; border: 1px solid blue; width: 100px; heigth: 300px';
+    elem.addEventListener('click',function(){
+    alert(elem.tagName.toUpperCase());
+})
+</script>
+</body>
+</html>
